@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Demo</title>
+</head>
+<script>
+function validateForm(){
+var name=bhai.uname.value;
+var gender=bhai.gender.value;
+var bike=bhai.bike.value;
+var dob=bhai.DtOB.value;
+
+if (document.bhai.uname.value == "") {alert("Please fill the Name");}
+else if (document.bhai.gender.value == "") {alert("Please select the Gender");}
+else if (document.bhai.bike.value== "" ) {alert("Please select the Bike");}
+else if (document.bhai.DtOB.value== "" ) {alert("Please select the DOB");}
+else 
+alert("Yo Yo Honey Singh");
+}
+</script>
+<body>
+	<form name="bhai">
+		<table>
+			<tr>
+			<td>Name:</td>
+				<td><input type="text" name="uname" /></td>
+			</tr>
+			<tr>
+			<td>Gender:</td>
+				<td><input type="radio" id ="male" name="gender" value="Male">Male</input>
+				<input type="radio" id="female" name="gender" value="Female">Female</input></td>
+			</tr>
+	
+	        	<tr>
+	            <td >Bikes: </td>
+	            <td><select  name="bike">
+					  <option value="">Select Bike</option>
+					  <option value="pul">Pulsar</option>
+					  <option value="bul">Bullet</option>
+					  <option value="avg">Avenger</option>
+				</select></td>
+	        </tr>
+	        <tr>
+                <td >Date of Birth :</td>
+                <td><input type="date" name="DtOB" id ="DOB" /></td>
+            </tr>
+			<tr>
+                <td colspan=2 align="center"><br><input type="button" name="submit" value="Submit" onclick="validateForm()"/>
+            </tr>
+		</table>
+	</form>
+</body>
+</html>
